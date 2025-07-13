@@ -35,12 +35,10 @@ const inventory = {
     { name: "Bandes Grande taille", expected: 10 },
     { name: "Bandes Petite taille", expected: 10 }
   ]
-
   "Poche N°9": [
     { name: "compresses", expected: 30 },
     { name: "Serum Physiologique", expected: 20 }
   ]
-
 "Poche N°10": [
     { name: "Tensiometre + brassards + stéthoscope", expected: 1 },
     { name: "Oxymetre de pouls", expected: 20 },
