@@ -30,5 +30,9 @@ const inventory = {
     { name: "Boite OPTC", expected: 1 },
     { name: "Bandes Cohésives", expected: 2 }
   ]
-
+"Poche N°8": [
+    { name: "Boite de pansement", expected: 2 },
+    { name: "Boite OPTC", expected: 1 },
+    { name: "Bandes Cohésives", expected: 2 }
+  ]
 };
