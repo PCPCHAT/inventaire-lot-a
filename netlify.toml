@@ -1,5 +1,5 @@
 [[redirects]]
   from = "http://*"
-  to = "https://inventaire-lot-a.netlify.app/:splat"
+  to = "https://inventaire-chatillon92.netlify.app//:splat"
   status = 301
   force = true
