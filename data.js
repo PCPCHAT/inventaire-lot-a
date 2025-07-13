@@ -1,7 +1,8 @@
 const inventory = {
   "Poche N°1": [
     { name: "BAVU Adulte + masque insufflateur", expected: 1 },
-    { name: "Canule oropharyngée de Guedel T0/1/2/3/4", expected: 5 }
+    { name: "Canule oropharyngée de Guedel T0/1/2/3/4", expected: 5 },
+    { name: "Lampe frontale", expected: 2 }
   ],
   "Poche N°2": [
     { name: "Garrot", expected: 2 },
@@ -29,10 +30,9 @@ const inventory = {
     { name: "Boite de pansement", expected: 2 },
     { name: "Boite OPTC", expected: 1 },
     { name: "Bandes Cohésives", expected: 2 }
+  ],
+  "Poche N°9": [
+    { name: "Ciseaux Jesco", expected: 1 },
+    { name: "Carnet de constat", expected: 2 }
   ]
-  "Poche N°9": [  // ← NOUVELLE POCHE OK
-    { name: "Carnet constat", expected: 1 },
-    { name: "Ciseaux Jesco", expected: 1 }
-  ]
-
 };
