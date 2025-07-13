@@ -30,4 +30,11 @@ const inventory = {
     { name: "Boite OPTC", expected: 1 },
     { name: "Bandes Cohésives", expected: 2 }
   ]
+
+
+  "Poche N°8": [
+    { name: "test", expected: 2 },
+    { name: "Boite test", expected: 1 },
+    { name: "Bandes test", expected: 2 }
+  ]
 };
