@@ -31,8 +31,20 @@ const inventory = {
     { name: "Boite OPTC", expected: 1 },
     { name: "Bandes Cohésives", expected: 2 }
   ],
+  "Poche N°8": [
+    { name: "Bandes Grande taille", expected: 10 },
+    { name: "Bandes Petite taille", expected: 10 }
+  ]
+
   "Poche N°9": [
-    { name: "Ciseaux Jesco", expected: 1 },
-    { name: "Carnet de constat", expected: 2 }
+    { name: "compresses", expected: 30 },
+    { name: "Serum Physiologique", expected: 20 }
+  ]
+
+"Poche N°10": [
+    { name: "Tensiometre + brassards + stéthoscope", expected: 1 },
+    { name: "Oxymetre de pouls", expected: 20 },
+    { name: "thermometre tympanique ", expected: 20 },
+    { name: "Lecteur de Glycémie", expected: 20 }
   ]
 };
