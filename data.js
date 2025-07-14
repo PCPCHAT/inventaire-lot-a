@@ -87,11 +87,11 @@ const inventory = {
     "Poche laterale 2": [
       { name: "MHC Pédiatrique", expected: 2 },
       { name: "MMC Pédiatrique", expected: 2 },
-       { name: "BAVU Pédiatrique + masque Tubulure+", expected: 1 }
+       { name: "BAVU Pédiatrique + masque Tubulure", expected: 1 }
     ],
      "Poche interieur": [
       { name: "Colier cervical Adulte", expected: 1 },
-      { name: "Bouteille d'O2", expected: 1 },
+      { name: "Bouteille d'O2", expected: 1 }
     ]
 
     
