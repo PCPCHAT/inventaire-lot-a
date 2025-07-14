@@ -77,13 +77,13 @@ const inventory = {
   ]
     
   },
-  "Sac de soin": {
+  "Sac d'O2": {
     "Poche 1": [
       { name: "Gants stériles", expected: 10 },
       { name: "Désinfectant", expected: 1 }
     ]
   },
-  "Sac d’O2": {
+  "Sac de soin": {
     "Poche N°1": [
       { name: "Tensiometre + brassards + stéthoscope", expected: 1 }
     ],
@@ -93,10 +93,31 @@ const inventory = {
       { name: "Sparadrap", expected: 1 }
     ],
      "Poche N°3": [
-      { name: "Haricot", expected: 1 },
-      { name: "Ciseaux Jesco", expected: 1 },
-      { name: "Sparadrap", expected: 1 }
-    ]
+      { name: "Bande extensible", expected: 2 },
+      { name: "Echarpe", expected: 2 },
+      { name: "Poche de froid", expected: 1 }
+    ],
+    "Poche N°4": [
+      { name: "Glucometre + bandelette", expected: 1 },
+      { name: "Thermometre tympanique", expected: 1 },
+      { name: "Boite d'embouts tympanique ", expected: 2 },
+      { name: "Saturometre", expected: 1 }
+    ],
+"Poche N°5": [
+      { name: "Sérum Physiologique", expected: 10 },
+      { name: "Compresses", expected: 10 },
+      { name: "Pansements", expected: 10 },
+      { name: "Saturometre", expected: 1 }
+    ],
+  "Poche N°6": [
+      { name: "Lunettes", expected: 2 },
+      { name: "Gel hydroalcoolique", expected: 1 }
+    ],
+   "Poche N°7": [
+      { name: "PCU", expected: 2 },
+      { name: "Garrots", expected: 2 }
+    ],
+    
     
   },
   "Matériel d’immobilisation": {
