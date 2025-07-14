@@ -1,6 +1,4 @@
-# Recréer le fichier script.js après reset de l'environnement
-
-script_js = '''function generateInventory() {
+function generateInventory() {
   const container = document.getElementById('content');
   container.innerHTML = "";
 
@@ -77,10 +75,4 @@ function checkInventory() {
   result.innerHTML = html;
 }
 
-generateInventory();'''
-
-script_path = "/mnt/data/script.js"
-with open(script_path, "w") as f:
-    f.write(script_js)
-
-script_path
+generateInventory();
