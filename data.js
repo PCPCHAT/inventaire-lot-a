@@ -138,7 +138,7 @@ const inventory = {
       { name: "Touillette", expected: 5 },
       { name: "Sac DAOM", expected: 2 },
       { name: "Sac DASRI", expected: 2 },
-      { name: "Boite OPTC", expected: 1 },
+      { name: "Boite OPTC", expected: 1 }
     ]
     
   },
@@ -158,7 +158,7 @@ const inventory = {
     "ACT" : [
       { name: "ACT", expected: 1 },
     ],
-     "Plan dur/ cuillère" : [
+     "Plan dur cuillère" : [
       { name: "Plan dur", expected: 1 },
       { name: "Sangle", expected: 3 },
       { name: "Sangle araignée", expected: 1 },
