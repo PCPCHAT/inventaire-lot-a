@@ -1,8 +1,4 @@
 const inventory = {
-
-
-
-  
   "Sac POM": {
     "Poche N°1": [
       { name: "BAVU Adulte + masque insufflateur", expected: 1 },
