@@ -30,7 +30,7 @@ h2 {
 }
 
 input[type="number"] {
-  width: 60px;
+  width: 40px;
 }
 
 button {
@@ -47,6 +47,6 @@ button {
 #result {
   margin-top: 20px;
   background: #ffefc2;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
 }
