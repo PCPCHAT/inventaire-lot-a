@@ -118,8 +118,24 @@ const inventory = {
       { name: "Garrots", expected: 2 }
     ],
     
+      "Poche superieure": [
+      { name: "Paire de gants", expected: 4 },
+      { name: "Masque FFP2", expected: 5 },
+      { name: "Masque chirurgical", expected: 5 }
+    ],
+ "Poche Latérales": [
+      { name: "Bouteille d'eau", expected: 1 },
+      { name: "Gobelets ", expected: 5 },
+      { name: "Touillette", expected: 5 },
+      { name: "Sac DAOM", expected: 2 },
+      { name: "Sac DASRI", expected: 2 },
+      { name: "Boite OPTC", expected: 1 },
+    ],
     
   },
+
+
+  
   "Matériel d’immobilisation": {
    "Atelles" : [
       { name: "Atelles à dépression", expected: 3 },
