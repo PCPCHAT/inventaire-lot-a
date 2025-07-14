@@ -34,25 +34,41 @@ function generateInventory() {
 }
 
 function checkInventory() {
-  let missing = [];
+  let missingBySac = {};
+
   for (let sac in inventory) {
     const poches = inventory[sac];
+
     for (let poche in poches) {
       poches[poche].forEach((item, idx) => {
         const inputId = `${sac}-${poche}-${idx}`;
         const value = parseInt(document.getElementById(inputId).value);
         if (isNaN(value) || value < item.expected) {
-          missing.push(`${sac} > ${poche} > ${item.name} (${value || 0}/${item.expected})`);
+          if (!missingBySac[sac]) missingBySac[sac] = [];
+          missingBySac[sac].push(`• ${poche} > ${item.name} (${value || 0}/${item.expected})`);
         }
       });
     }
   }
 
   const result = document.getElementById('result');
-  result.innerHTML = missing.length === 0
-    ? "✅ Tout est présent."
-    : `<strong>❌ Manquant :</strong><ul>${missing.map(m => `<li>${m}</li>`).join('')}</ul>`;
+  if (Object.keys(missingBySac).length === 0) {
+    result.innerHTML = "✅ Tout est présent.";
+    return;
+  }
+
+  let html = "<strong>❌ Matériel manquant :</strong><br><br>";
+  for (let sac in missingBySac) {
+    html += `<strong>🟧 ${sac}</strong><ul>`;
+    missingBySac[sac].forEach(itemLine => {
+      html += `<li>${itemLine}</li>`;
+    });
+    html += `</ul>`;
+  }
+
+  result.innerHTML = html;
 }
+
 
 generateInventory();
 
