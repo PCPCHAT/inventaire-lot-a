@@ -57,7 +57,7 @@ const inventory = {
     { name: "Pince à écharde", expected: 2 }
     ],
   "Poche N°12": [
-    { name: "Poche de froid", expected: 15 },
+    { name: "Poche de froid", expected: 15 }
   ],
     "Poche N°13": [
     { name: "Echarpe triangulaire", expected: 10 }
@@ -160,17 +160,17 @@ const inventory = {
       { name: "Drap", expected: 1 }
     ],
     "ACT" : [
-      { name: "ACT", expected: 1 },
+      { name: "ACT", expected: 1 }
     ],
      "Plan dur cuillère" : [
       { name: "Plan dur", expected: 1 },
       { name: "Sangle", expected: 3 },
       { name: "Sangle araignée", expected: 1 },
-      { name: "Cale tête", expected: 1 },
+      { name: "Cale tête", expected: 1 }
     ],
 
     "Chaise portoire" : [
-      { name: "Chaise", expected: 1 },
+      { name: "Chaise", expected: 1 }
     ]
 
     
@@ -182,7 +182,7 @@ const inventory = {
       { name: "Rouleau DASRI", expected: 1 },
       { name: "Spray Détergent", expected: 1 },
       { name: "Boite de Gants", expected: 4 },
-      { name: "Gel hydroalcoolique", expected: 1 },
+      { name: "Gel hydroalcoolique", expected: 1 }
     ],
 
     "Sac 2": [
@@ -191,7 +191,7 @@ const inventory = {
       { name: "Bouteille d'O2", expected: 1 },
       { name: "Compresses", expected: 20 },
       { name: "Poche de froid", expected: 10 },
-      { name: "Serum physiologique", expected: 20 },
+      { name: "Serum physiologique", expected: 20 }
     ]
   }
 };
