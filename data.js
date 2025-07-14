@@ -74,7 +74,7 @@ const inventory = {
     { name: "Masque FFP2", expected: 10 },
     { name: "Masque chirurgical", expected: 10 },
     { name: "Touillette ", expected: 10 }
-  ],
+  ]
     
   },
   "Sac de soin": {
@@ -96,7 +96,7 @@ const inventory = {
       { name: "Haricot", expected: 1 },
       { name: "Ciseaux Jesco", expected: 1 },
       { name: "Sparadrap", expected: 1 }
-    ],
+    ]
     
   },
   "Matériel d’immobilisation": {
@@ -119,7 +119,7 @@ const inventory = {
       { name: "Rouleau DASRI", expected: 1 },
       { name: "Spray Détergent", expected: 1 },
       { name: "Boite de Gants", expected: 4 }
-    ]
+    ],
 
     "Sac 2": [
       { name: "Draps UU", expected: 10 },
