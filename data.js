@@ -73,7 +73,7 @@ const inventory = {
     { name: "Lunettes de protection", expected: 5 },
     { name: "Masque FFP2", expected: 10 },
     { name: "Masque chirurgical", expected: 10 },
-    { name: "Touillette ", expected: 10 }
+    { name: "Recharge AMS ", expected: 1 }
   ]
     
   },
@@ -88,6 +88,10 @@ const inventory = {
       { name: "MHC Pédiatrique", expected: 2 },
       { name: "MMC Pédiatrique", expected: 2 },
        { name: "BAVU Pédiatrique + masque Tubulure+", expected: 1 }
+    ],
+     "Poche interieur": [
+      { name: "Colier cervical Adulte", expected: 1 },
+      { name: "Bouteille d'O2", expected: 1 },
     ]
 
     
