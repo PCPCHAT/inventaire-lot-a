@@ -107,7 +107,20 @@ const inventory = {
     "MID" : [
       { name: "MID", expected: 1 },
       { name: "Pompe", expected: 1 },
-      { name: "Drap", expected: 1 },
+      { name: "Drap", expected: 1 }
+    ],
+    "ACT" : [
+      { name: "ACT", expected: 1 },
+    ],
+     "Plan dur/ cuillère" : [
+      { name: "Plan dur", expected: 1 },
+      { name: "Sangle", expected: 3 },
+      { name: "Sangle araignée", expected: 1 },
+      { name: "Cale tête", expected: 1 },
+    ],
+
+    "Chaise portoire" : [
+      { name: "Chaise", expected: 1 },
     ]
 
     
