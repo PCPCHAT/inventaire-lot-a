@@ -74,9 +74,5 @@ function checkInventory() {
   result.innerHTML = html;
 }
 
-  result.innerHTML = html;
-}
-
-
 generateInventory();
 
