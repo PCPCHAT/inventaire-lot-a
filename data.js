@@ -143,7 +143,7 @@ const inventory = {
       { name: "Sac DAOM", expected: 2 },
       { name: "Sac DASRI", expected: 2 },
       { name: "Boite OPTC", expected: 1 },
-    ],
+    ]
     
   },
 
