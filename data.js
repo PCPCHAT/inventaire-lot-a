@@ -1,4 +1,8 @@
 const inventory = {
+
+
+
+  
   "Sac POM": {
     "Poche N°1": [
       { name: "BAVU Adulte + masque insufflateur", expected: 1 },
@@ -78,10 +82,19 @@ const inventory = {
     
   },
   "Sac d'O2": {
-    "Poche 1": [
-      { name: "Gants stériles", expected: 10 },
-      { name: "Désinfectant", expected: 1 }
+    "Poche laterale 1": [
+      { name: "MHC Adulte", expected: 2 },
+      { name: "MMC Adulte", expected: 2 },
+       { name: "Lunettes O2", expected: 2 },
+       { name: "BAVU Adulte + masque Tubulure+", expected: 1 }
+    ],
+    "Poche laterale 2": [
+      { name: "MHC Pédiatrique", expected: 2 },
+      { name: "MMC Pédiatrique", expected: 2 },
+       { name: "BAVU Pédiatrique + masque Tubulure+", expected: 1 }
     ]
+
+    
   },
   "Sac de soin": {
     "Poche N°1": [
@@ -168,12 +181,17 @@ const inventory = {
       { name: "Rouleau DAOM", expected: 1 },
       { name: "Rouleau DASRI", expected: 1 },
       { name: "Spray Détergent", expected: 1 },
-      { name: "Boite de Gants", expected: 4 }
+      { name: "Boite de Gants", expected: 4 },
+      { name: "Gel hydroalcoolique", expected: 1 },
     ],
 
     "Sac 2": [
       { name: "Draps UU", expected: 10 },
-      { name: "Couvertures de survie", expected: 5 }
+      { name: "Couvertures de survie", expected: 5 },
+      { name: "Bouteille d'O2", expected: 1 },
+      { name: "Compresses", expected: 20 },
+      { name: "Poche de froid", expected: 10 },
+      { name: "Serum physiologique", expected: 20 },
     ]
   }
 };
