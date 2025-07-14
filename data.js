@@ -2,13 +2,15 @@ const inventory = {
   "Sac POM": {
     "Poche N°1": [
       { name: "BAVU Adulte + masque insufflateur", expected: 1 },
-      { name: "Canule oropharyngée de Guedel T0/1/2/3/4", expected: 5 },
-      { name: "Lampe frontale", expected: 2 }
+      { name: "Canule oropharyngée de Guedel T0/1/2/3/4", expected: 5 }
     ],
     "Poche N°2": [
        { name: "Garrot", expected: 2 },
        { name: "Pansement israélien", expected: 1 },
-       { name: "CHU", expected: 1 }
+       { name: "CHU", expected: 1 },
+      { name: "Compresse hydrogel stérile 20x20cm", expected: 1 },
+      { name: "Compresse hydrogel stérile 10x10cm", expected: 2 },
+      { name: "Champ stérile", expected: 2 }
     ],
      "Poche N°3": [
     { name: "BAVU pédiatrique + masque insufflateur", expected: 1 },
@@ -43,14 +45,14 @@ const inventory = {
 "Poche N°10": [
     { name: "Tensiometre + brassards + stéthoscope", expected: 1 },
     { name: "Oxymetre de pouls", expected: 20 },
-    { name: "thermometre tympanique ", expected: 20 },
+    { name: "Thermometre tympanique ", expected: 20 },
     { name: "Lecteur de Glycémie", expected: 20 },
     { name: "Boite de bandelettes", expected: 20 }
   ],
 "Poche N°11": [
     { name: "Haricot", expected: 2 },
     { name: "Ciseaux JESCO", expected: 1 },
-    { name: "Autopiqueurs", expected: 20 },
+    { name: "Autopiqueurs", expected: 30 },
     { name: "Sparadrap", expected: 2 },
     { name: "Pince à écharde", expected: 2 }
     ],
@@ -58,10 +60,8 @@ const inventory = {
     { name: "Poche de froid", expected: 15 },
   ],
     "Poche N°13": [
-    { name: "Tensiometre + brassards + stéthoscope", expected: 1 },
-    { name: "Oxymetre de pouls", expected: 20 },
-    { name: "thermometre tympanique ", expected: 20 },
-    { name: "Lecteur de Glycémie", expected: 20 }
+    { name: "Echarpe triangulaire", expected: 10 }
+
   ],
     "Poche N°14": [
     { name: "Serviettes", expected: 20 },
@@ -73,8 +73,7 @@ const inventory = {
     { name: "Lunettes de protection", expected: 5 },
     { name: "Masque FFP2", expected: 10 },
     { name: "Masque chirurgical", expected: 10 },
-    { name: "Touillette ", expected: 10 },
-    { name: "Bouchon d'oreille", expected: 10 }
+    { name: "Touillette ", expected: 10 }
   ],
     
   },
@@ -85,20 +84,45 @@ const inventory = {
     ]
   },
   "Sac d’O2": {
-    "Poche 1": [
-      { name: "Lunettes à oxygène", expected: 2 },
-      { name: "MHC Adulte", expected: 2 }
-    ]
+    "Poche N°1": [
+      { name: "Tensiometre + brassards + stéthoscope", expected: 1 }
+    ],
+      "Poche N°2": [
+      { name: "Haricot", expected: 1 },
+      { name: "Ciseaux Jesco", expected: 1 },
+      { name: "Sparadrap", expected: 1 }
+    ],
+     "Poche N°3": [
+      { name: "Haricot", expected: 1 },
+      { name: "Ciseaux Jesco", expected: 1 },
+      { name: "Sparadrap", expected: 1 }
+    ],
+    
   },
   "Matériel d’immobilisation": {
-    "Poche 1": [
-      { name: "Écharpe triangulaire", expected: 2 },
-      { name: "Attelle", expected: 2 }
+   "Atelles" : [
+      { name: "Atelles à dépression", expected: 3 },
+      { name: "Pompe", expected: 1 }
+    ],
+    "MID" : [
+      { name: "MID", expected: 1 },
+      { name: "Pompe", expected: 1 },
+      { name: "Drap", expected: 1 },
     ]
+
+    
   },
   "Réserve": {
-    "Poche 1": [
-      { name: "VOMIX", expected: 20 },
+    "Sac 1": [
+      { name: "Draps UU", expected: 10 },
+      { name: "Rouleau DAOM", expected: 1 },
+      { name: "Rouleau DASRI", expected: 1 },
+      { name: "Spray Détergent", expected: 1 },
+      { name: "Boite de Gants", expected: 4 }
+    ]
+
+    "Sac 2": [
+      { name: "Draps UU", expected: 10 },
       { name: "Couvertures de survie", expected: 5 }
     ]
   }
