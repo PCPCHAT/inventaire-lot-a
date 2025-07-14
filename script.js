@@ -1,4 +1,6 @@
-function generateInventory() {
+# Recréer le fichier script.js après reset de l'environnement
+
+script_js = '''function generateInventory() {
   const container = document.getElementById('content');
   container.innerHTML = "";
 
@@ -18,7 +20,7 @@ function generateInventory() {
       poches[poche].forEach((item, idx) => {
         const div = document.createElement('div');
         div.className = "item";
-        const inputId = `${sac}-${poche}-${idx}`;
+        const inputId = `${sac}-${poche}-${idx}`.replace(/[^a-zA-Z0-9_-]/g, "_");
         div.innerHTML = `
           <span>${item.name} (attendu : ${item.expected})</span>
           <input type="number" min="0" id="${inputId}" />
@@ -41,13 +43,14 @@ function checkInventory() {
 
     for (let poche in poches) {
       poches[poche].forEach((item, idx) => {
-        const inputId = `${sac}-${poche}-${idx}`;
+        const inputId = `${sac}-${poche}-${idx}`.replace(/[^a-zA-Z0-9_-]/g, "_");
         const value = parseInt(document.getElementById(inputId).value);
 
         if (isNaN(value) || value < item.expected) {
           if (!missingBySac[sac]) missingBySac[sac] = {};
           if (!missingBySac[sac][poche]) missingBySac[sac][poche] = [];
-          missingBySac[sac][poche].push(`${item.name} (${value || 0}/${item.expected})`);
+          const missingQty = item.expected - (value || 0);
+          missingBySac[sac][poche].push(`${item.name} (${value || 0}/${item.expected}) — manquant : ${missingQty}`);
         }
       });
     }
@@ -74,5 +77,10 @@ function checkInventory() {
   result.innerHTML = html;
 }
 
-generateInventory();
+generateInventory();'''
 
+script_path = "/mnt/data/script.js"
+with open(script_path, "w") as f:
+    f.write(script_js)
+
+script_path
