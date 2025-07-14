@@ -43,9 +43,11 @@ function checkInventory() {
       poches[poche].forEach((item, idx) => {
         const inputId = `${sac}-${poche}-${idx}`;
         const value = parseInt(document.getElementById(inputId).value);
+
         if (isNaN(value) || value < item.expected) {
-          if (!missingBySac[sac]) missingBySac[sac] = [];
-          missingBySac[sac].push(`• ${poche} > ${item.name} (${value || 0}/${item.expected})`);
+          if (!missingBySac[sac]) missingBySac[sac] = {};
+          if (!missingBySac[sac][poche]) missingBySac[sac][poche] = [];
+          missingBySac[sac][poche].push(`${item.name} (${value || 0}/${item.expected})`);
         }
       });
     }
@@ -59,12 +61,18 @@ function checkInventory() {
 
   let html = "<strong>❌ Matériel manquant :</strong><br><br>";
   for (let sac in missingBySac) {
-    html += `<strong>🟧 ${sac}</strong><ul>`;
-    missingBySac[sac].forEach(itemLine => {
-      html += `<li>${itemLine}</li>`;
-    });
-    html += `</ul>`;
+    html += `<strong>🟧 ${sac}</strong><br>`;
+    for (let poche in missingBySac[sac]) {
+      html += `&nbsp;&nbsp;<u>▸ ${poche}</u><ul>`;
+      missingBySac[sac][poche].forEach(itemLine => {
+        html += `<li>${itemLine}</li>`;
+      });
+      html += `</ul>`;
+    }
   }
+
+  result.innerHTML = html;
+}
 
   result.innerHTML = html;
 }
